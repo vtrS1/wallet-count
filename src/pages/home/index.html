@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wallet App Home</title>
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="home-content-container">
+      <div class="navbar">
+        <img
+          src="../../img/logo.png"
+          class="logo-navbar"
+          alt="Logo Wallet App"
+        />
+        <div class="navbar-calendar-container">
+          <input class="input-calendar" id="selected-date" type="date" />
+        </div>
+        <div id="navbar-user-container" class="navbar-user-container">
+          <div id="navbar-user-avatar" class="navbar-user-avatar"></div>
+        </div>
+      </div>
+      <div class="finance-card-container">
+        <div id="finance-card-1" class="finance-card"></div>
+        <div id="finance-card-2" class="finance-card"></div>
+        <div id="finance-card-3" class="finance-card"></div>
+        <div id="finance-card-4" class="finance-card"></div>
+      </div>
+      <div class="table-container">
+        <div class="table-content-container">
+          <div class="table-content-header">
+            <h2>Últimos lançamentos</h2>
+            <button onclick="onOpenModal()" class="small">Adicionar</button>
+          </div>
+          <table id="finances-table"></table>
+        </div>
+      </div>
+    </div>
+    <div id="modal" class="modal-background">
+      <div class="modal-content">
+        <div class="modal-content-header">
+          <h3>Adicionar lançamento</h3>
+          <button onclick="onCloseModal()" class="small">Fechar</button>
+        </div>
+        <form id="form-finance-release" class="mt">
+          <label class="mt" for="input-title">Título:</label>
+          <input
+            class="mt smaller"
+            type="text"
+            id="input-title"
+            name="input-title"
+            placeholder="Ex: Conta de energia"
+            required
+          />
+          <label class="mt" for="input-value">Valor</label>
+          <input
+            class="mt smaller"
+            type="number"
+            step="any"
+            id="input-value"
+            name="input-value"
+            placeholder="R$ 0,00 (Use valores negativos para uma despesa)"
+            required
+          />
+          <label class="mt" for="input-date">Data</label>
+          <input
+            class="mt smaller"
+            type="date"
+            id="input-date"
+            name="input-date"
+            placeholder="00/00/0000"
+            required
+          />
+          <label class="mt" for="input-category">Categoria</label>
+          <select
+            class="mt smaller"
+            id="input-category"
+            name="input-category"
+            required
+          ></select>
+          <button type="submit" class="mt full-width">Adicionar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
