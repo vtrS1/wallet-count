@@ -3,11 +3,11 @@
 This is an finances management dashboard made with JavaScript, HTML and CSS.
 The main objective is the user add and delete finances releases (that are saved in the api), and inform him the balance of the month.
 
-<img alt="wallet-app-sample-image" src="https://github.com/gabrielrangel95/wallet-app-frontend/blob/main/src/img/sample.png" height="500">
+<img alt="wallet-app-sample-image" src="https://github.com/vtrS1/wallet-count/blob/master/src/img/sample.png" height="500">
 
 ## Live application
 
-https://gabrielrangel95.github.io/wallet-app-frontend/
+https://github.com/vtrS1/wallet-count.git
 
 ## Technologies used
 
@@ -20,7 +20,7 @@ https://gabrielrangel95.github.io/wallet-app-frontend/
 1. Clone the application:
 
 ```
-git clone https://github.com/gabrielrangel95/wallet-app-frontend.git
+git clone https://github.com/vtrS1/wallet-count.git
 ```
 
 2. Open in the explorer the project and open the index.html file
